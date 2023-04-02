@@ -19,7 +19,7 @@ const createTitle = (title) => {
     const player1 = prompt('Enter player X name:');
     const player2 = prompt('Enter player O name:');
     startGame(player1, player2);
-  });
+  }, {once: true});
 };
 
 const startGame = (player1, player2) => {
