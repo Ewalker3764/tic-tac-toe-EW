@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: monospace;
+  padding-left: 100px;
+  
+  background-color: rgb(8, 13, 80);
+  
+}
+h1 {
+  
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(34, 150, 245);
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  box-shadow: 0px 0px 7px 7px rgb(100, 100, 167);
+  width: 550px;
+  height: 550px;
+  background-color: lightgrey;
+  
+  border: 10px solid rgb(230, 102, 162);
+  border-radius: 25px;
+  padding: 40px;
+  margin: 25px;
+  
+}
+
+
+.tile {
+  font-size: 100px;
+  width: 148.5px;
+  height: 150px;
+  border-right: 5px solid rgb(34, 150, 245);
+  border-bottom: 5px solid rgb(34, 150, 245);
+  text-align: center;
+  cursor: pointer;
+  
+
+  
+}
+.tile:nth-child(3n) {
+  border-right: none;
+}
+.tile:nth-child(n + 7) {
+  border-bottom: none;
+}
+.tile:hover {
+  background-color:papayawhip;
+  
+}
+
+button {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 10px 10px;
+border: 5px solid rgb(230, 102, 162);
+font-size: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgb(34, 150, 245);
+cursor: pointer;
+background-color: papayawhip;
+border-radius: 15px;
+box-shadow: 0px 0px 4px 4px rgb(100, 100, 167);
+
+}
+
+
+.endGame {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  
+}
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  color: aliceblue;
+  font-size: 50px;
+}
+label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  padding: 10px 10px;
+  color: aliceblue;
+  font-size: 20px;
+}
+input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5px solid rgb(230, 102, 162);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgb(34, 150, 245);
+background-color: papayawhip;
+border-radius: 15px;
+box-shadow: 0px 0px 4px 4px rgb(100, 100, 167);
+  align-items: center;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor:text;
+}
